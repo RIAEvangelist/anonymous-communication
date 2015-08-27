@@ -1,0 +1,35 @@
+/*
+    CSS for the encrypt module.
+    Do not leave file empty.
+*/
+
+.encrypt{
+    height:calc(100% - 40px);   
+}
+
+.encrypt h2{
+    margin:0;
+    height:30px;
+    line-height:30px;
+    font-size:20px;
+}
+
+.encrypt textarea{
+    width:calc(100% - 5px);
+    height:calc(100% - 70px);
+    background:rgba(220,233,220,.7);
+    border:none;
+    outline:none;
+    resize:none;
+}
+
+.encrypt button{
+    border:none;
+    background:rgba(120,133,120,.5);
+    color:rgb(210,210,210);
+    width:75px;
+}
+
+.encrypt input{
+    width:calc(100% - 200px);
+}

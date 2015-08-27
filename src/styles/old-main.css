@@ -1,0 +1,40 @@
+html, 
+body{
+  overflow-y:auto;
+  font-family:helvetica,arial,verdana;
+}
+
+body *{
+  position:relative;
+}
+
+input,
+textarea,
+output{
+    width:97%;
+    -webkit-user-select:text!important;
+}
+
+input[type='radio']{
+    width:25px;
+}
+
+.tO{
+    height:200px
+}
+
+nav ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+nav li{
+    width:25%;
+    background:beige;
+    display:inline-block;
+}
+
+.vO{
+    width:98%;
+}

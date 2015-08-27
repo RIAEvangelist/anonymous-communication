@@ -1,0 +1,93 @@
+/*
+    CSS for the im module.
+    Do not leave file empty.
+*/
+
+.dm{
+    height:calc(100% - 50px);   
+}
+
+.dm.screen{
+    margin-top:30px;
+}
+
+.dm .messenger{
+    height:calc(100% - 30px);
+    width:100%;
+}
+
+.dm textarea{
+    width:calc(100% - 5px);
+    height:75%;
+    background:rgba(220,220,233,.7);
+    border:none;
+    outline:none;
+    resize:none;
+}
+
+.dm .dmInput{
+    background:rgba(220,233,220,.7);
+    height:20%;
+}
+
+.dm button{
+    border:none;
+    background:rgba(40,60,40,.5);
+    color:rgb(210,210,210);
+    width:75px;
+    display:block;
+    margin-bottom:20px;
+}
+
+.dm .messenger button{
+    float:right;
+}
+
+.dm input{
+    width:250px;
+    left:calc(50% - 130px);
+    display:block;
+    margin:40px;
+    padding:5px;
+    line-height:25px;
+    font-size:20px;
+    border:none;
+    background:rgba(250,250,250,.6);
+}
+
+.dm .login img{
+    height:40px;
+}
+
+.dm .login .youIcon,
+.dm .login .themIcon,
+.dm .login .eyeIcon,
+.dm .login .netIcon{
+    position: absolute;
+    left: calc(50% - 140px);
+    top: -3px;
+}
+
+.dm .login .themIcon{
+    top:72px;
+}
+
+.dm .login .eyeIcon{
+    top:148px;
+    cursor:pointer;
+}
+
+.dm .login .netIcon{
+    top:222px;
+    cursor:pointer;
+}
+
+.dm .login button{
+    font-size:14px;
+    padding:5px;
+    left:calc(50% + 90px);
+}
+
+.dm .IMCustomServer{
+    background:rgba(80,80,40,.5);
+}

@@ -1,0 +1,23 @@
+{
+  "name": "anonymous-communication-nwjs",
+  "version": "0.0.1",
+  "description": "Anonymous Communication App ======================= ***Government level encryption/decryption (U.S. FIPS). The same encryption is used by NSA and other governments around the world to secure classified data.***",
+  "main": "build.js",
+  "dependencies": {
+    "nw-builder": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RIAEvangelist/anonymous-communication-nwjs.git"
+  },
+  "author": "Brandon Nozaki Miller",
+  "license": "DBAD",
+  "bugs": {
+    "url": "https://github.com/RIAEvangelist/anonymous-communication-nwjs/issues"
+  },
+  "homepage": "https://github.com/RIAEvangelist/anonymous-communication-nwjs"
+}

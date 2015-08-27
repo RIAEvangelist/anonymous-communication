@@ -1,0 +1,33 @@
+html,
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    background:rgb(200,200,200);
+}
+
+body{
+    overflow-y:auto;
+}
+
+body * {
+    position:relative;
+}
+
+.hidden{
+    display:none!important;
+}
+
+button,
+input{
+    margin:2px;
+}
+
+button{
+    cursor:pointer;
+}
+
+.screen{
+    margin-top:40px;
+}

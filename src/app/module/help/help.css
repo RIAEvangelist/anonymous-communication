@@ -1,0 +1,10 @@
+/*
+    CSS for the help module.
+    Do not leave file empty.
+*/
+
+.help{
+    padding:5px;
+    background:rgba(255,255,255,.5);
+    word-wrap: break-word;
+}
