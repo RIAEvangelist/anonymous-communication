@@ -36,7 +36,6 @@
         }
         
         function sendEncrypted(data){
-            console.log(app.data.to,data);
             app.data.socket.send(
                 JSON.stringify(
                     {
@@ -53,20 +52,39 @@
             document.getElementById('IMInput').value='';
         }
         
-        function createIM(){
-            app.data.you     = document.getElementById('you').value,
-            app.data.them    = document.getElementById('them').value,
-            app.data.cipher  = document.getElementById('IMCipher').value;
-                
-            app.data.as=app.data.you+app.data.them;
-            app.data.to=app.data.them+app.data.you;
-        
+        function connectToEncrypted(data){
+            app.data.to=data;
+            
             document.getElementById('login').classList.add('hidden');
             document.getElementById('messenger').classList.remove('hidden');
             
             retrySocket();
             
             document.getElementById('DMTitle').innerHTML='DM with '+app.data.them;
+        }
+        
+        function connectEncrypted(data){
+            app.data.as=data;
+            
+            app.trigger(
+                'encrypt',
+                app.data.them+app.data.you,
+                app.data.cipher,
+                connectToEncrypted
+            );
+        }
+        
+        function createIM(){
+            app.data.you     = document.getElementById('you').value,
+            app.data.them    = document.getElementById('them').value,
+            app.data.cipher  = document.getElementById('IMCipher').value;
+            
+            app.trigger(
+                'encrypt',
+                app.data.you+app.data.them,
+                app.data.cipher,
+                connectEncrypted
+            );
         }
         
         function retrySocket(){
