@@ -1,0 +1,24 @@
+{
+    "startAt": "dm",
+    "lib": [
+        
+    ],
+    "modules": {
+        "logic": [
+            
+        ],
+        "ui": {
+            "dm":{
+                "header":{},
+                "dm":{}
+            },
+            "error":{
+                "error":{}
+            },
+            "other":{
+                "decrypt":{},
+                "encrypt":{}
+            }
+        }
+    }
+}

@@ -31,3 +31,10 @@ button{
 .screen{
     margin-top:40px;
 }
+
+.appModule{
+    position:absolute;
+    top:40px;
+    left:0;
+    width:100%;
+}

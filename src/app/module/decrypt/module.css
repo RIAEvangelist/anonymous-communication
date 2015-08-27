@@ -3,18 +3,19 @@
     Do not leave file empty.
 */
 
-.decrypt{
-    height:calc(100% - 40px);   
+.decrypt-module{
+    height:calc(100% - 40px);  
+    position:absolute;
 }
 
-.decrypt h2{
+.decrypt-module h2{
     margin:0;
     height:30px;
     line-height:30px;
     font-size:20px;
 }
 
-.decrypt textarea{
+.decrypt-module textarea{
     width:calc(100% - 5px);
     height:calc(100% - 70px);
     background:rgba(220,220,233,.7);
@@ -23,13 +24,13 @@
     resize:none;
 }
 
-.decrypt button{
+.decrypt-module button{
     border:none;
     background:rgba(120,120,133,.5);
     color:rgb(210,210,210);
     width:75px;
 }
 
-.decrypt input{
+.decrypt-module input{
     width:calc(100% - 200px);
 }

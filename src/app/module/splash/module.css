@@ -2,14 +2,14 @@
     CSS for the splash module.
     Do not leave file empty.
 */
-.splash{
+.splash-module{
     width:calc(100% - 20px);
     height:100%;
     background:rgb(200,200,200);
     position:absolute;
 }
 
-.splash img{
+.splash-module img{
     position:absolute;
     top:calc(50% - 128px);
     left:calc(50% - 128px);

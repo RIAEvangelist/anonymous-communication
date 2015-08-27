@@ -1,0 +1,132 @@
+{
+    "startAt": "login",
+    "lib": [
+        {
+            "path":"app/core/app.css",
+            "type":"css"
+        },
+        {
+            "path":"app/core/app.data.js",
+            "type":"js"
+        },
+        {
+            "path":"app/lib/xmlrpc.js",
+            "type":"js"
+        },
+        {
+            "path":"app/lib/xml2json.js",
+            "type":"js"
+        },
+        {
+            "path":"app/lib/html2canvas.js",
+            "type":"js"
+        },
+        {
+            "path":"app/lib/touchDrag.js",
+            "type":"js"
+        }
+    ],
+    "modules": {
+        "logic": [
+            "logic-nw-init",
+            "logic-system",
+            "logic-model-electrodes",
+            "logic-user",
+            "logic-stimulation",
+            "logic-api-xmlrpc",
+            "logic-api-matlab",
+            "logic-api-experiment",
+            "logic-comfortAssessment",
+            "logic-sensitivityDetection",
+            "logic-api-vcf",
+            "logic-audio",
+            "logic-screenshot",
+            "logic-gamepad-keyboard",
+            "logic-api-thresholds",
+            "devtools-system"
+        ],
+        "ui": {
+            "global": {
+                "ui-error": {},
+                "ui-notification": {},
+                "ui-modals":{}
+            },
+            "login": {
+                "ui-nw-controls" : {},
+                "ui-login": {}
+            },
+            "home": {
+                "ui-nw-controls" : {},
+                "ui-header": {},
+                "ui-apps": {}
+            },
+            "sensitivityDetection": {
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-electrode-array":{},
+                "ui-flow-state":{},
+                "ui-sidebar":{},
+                "ui-progress":{},
+                "ui-sensitivityDetectionResults":{},
+                "ui-main-action":{}
+            },
+            "comfortAssessment": {
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-flow-state":{},
+                "ui-electrode-array":{},
+                "ui-sidebar":{},
+                "ui-progress":{},
+                "ui-comfortAssessmentResults":{},
+                "ui-main-action":{}
+            },
+            "fieldOfView": {
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-realTimeFov":{}
+            },
+            "cameraAlignment":{
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-cameraAlignment":{},
+                "ui-main-action":{}
+            },
+            "fittingComplete":{
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-flow-state":{},
+                "ui-fittingComplete":{},
+                "ui-sidebar":{},
+                "ui-progress":{}
+            },
+            "vcfGeneration" : {
+                "ui-nw-controls" : {},
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-sidebar":{},
+                "ui-vcf":{},
+                "ui-vcf-sidebar":{}
+            },
+            "fceForms" : {
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-forms-fce":{}
+            },
+            "site-visit-form" : {
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-forms-site-visit":{}
+            },
+            "filters" : {
+                "ui-nw-controls" : {},
+                "ui-header":{},
+                "ui-filters":{},
+                "ui-flow-state":{},
+                "ui-filters-video":{}
+            },
+            "report" : {
+                "ui-reports":{}
+            }
+        }
+    }
+}

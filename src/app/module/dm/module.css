@@ -3,20 +3,20 @@
     Do not leave file empty.
 */
 
-.im{
+.dm-module{
     height:calc(100% - 50px);   
 }
 
-.im.screen{
+.dm-module.screen{
     margin-top:30px;
 }
 
-.im .messenger{
+.dm-module .messenger{
     height:calc(100% - 30px);
     width:100%;
 }
 
-.im textarea{
+.dm-module textarea{
     width:calc(100% - 5px);
     height:75%;
     background:rgba(220,220,233,.7);
@@ -25,12 +25,16 @@
     resize:none;
 }
 
-.im .IMInput{
+.dm-module .IMInput{
     background:rgba(220,233,220,.7);
     height:20%;
 }
 
-.im button{
+.dm-module .IMDisplay{
+    height:72%;
+}
+
+.dm-module button{
     border:none;
     background:rgba(40,60,40,.5);
     color:rgb(210,210,210);
@@ -39,11 +43,11 @@
     margin-bottom:20px;
 }
 
-.im .messenger button{
+.dm-module .messenger button{
     float:right;
 }
 
-.im input{
+.dm-module input{
     width:250px;
     left:calc(50% - 130px);
     display:block;
@@ -55,39 +59,39 @@
     background:rgba(250,250,250,.6);
 }
 
-.im .login img{
+.dm-module .login img{
     height:40px;
 }
 
-.im .login .youIcon,
-.im .login .themIcon,
-.im .login .eyeIcon,
-.im .login .netIcon{
+.dm-module .login .youIcon,
+.dm-module .login .themIcon,
+.dm-module .login .eyeIcon,
+.dm-module .login .netIcon{
     position: absolute;
     left: calc(50% - 140px);
     top: -3px;
 }
 
-.im .login .themIcon{
+.dm-module .login .themIcon{
     top:72px;
 }
 
-.im .login .eyeIcon{
+.dm-module .login .eyeIcon{
     top:148px;
     cursor:pointer;
 }
 
-.im .login .netIcon{
+.dm-module .login .netIcon{
     top:222px;
     cursor:pointer;
 }
 
-.im .login button{
+.dm-module .login button{
     font-size:14px;
     padding:5px;
     left:calc(50% + 90px);
 }
 
-.im .IMCustomServer{
+.dm-module .IMCustomServer{
     background:rgba(80,80,40,.5);
 }

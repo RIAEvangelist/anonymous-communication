@@ -36,6 +36,7 @@
         }
         
         function sendEncrypted(data){
+            console.log(app.data.to,data);
             app.data.socket.send(
                 JSON.stringify(
                     {
@@ -76,7 +77,7 @@
             app.data.socket = new WebSocket("ws://anon.diginow.it:11505");
             app.data.socket.onmessage=socketMessage;
             app.data.socket.onclose=function(){
-                    document.getElementById('error').classList.remove('hidden');
+                    document.getElementById('error-module').classList.remove('hidden');
                     setTimeout(
                         retrySocket,
                         1500
@@ -93,7 +94,7 @@
                 return;
             }
             
-            document.getElementById('error').classList.add('hidden');
+            document.getElementById('error-module').classList.add('hidden');
             
             if(data.question){
                 app.data.socket.send(

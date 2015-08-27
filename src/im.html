@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anonymous Instant Messenger</title>
+    <meta charset="utf-8">
+    <link href="app/core/app.css" rel="stylesheet">
+    <script src="app/core/aes.js"></script>
+    <script src="app/core/app.js"></script>
+    <script src="app/core/app.data.js"></script>
+</head>
+<body>
+    <div class='appModule splash' 
+            data-moduletype='splash'
+            data-css='true' 
+            data-html='true'></div>
+    <header class='appModule IMHeader' 
+            data-moduletype='header'
+            data-css='true' 
+            data-html='true'></header>
+    
+    <section class='appModule screen im' 
+            data-moduletype='im'
+            data-css='true' 
+            data-html='true'></section>
+    
+    <section class='appModule screen hidden' 
+            data-moduletype='encrypt'
+            data-css='true' 
+            data-html='true'></section>
+    <section class='appModule screen hidden' 
+            data-moduletype='decrypt'
+            data-css='true' 
+            data-html='true'></section>
+            
+    
+    <section id='error' 
+            class='appModule error screen hidden' 
+            data-moduletype='error'
+            data-css='true' 
+            data-html='true'></section>
+            
+</body>
+</html>

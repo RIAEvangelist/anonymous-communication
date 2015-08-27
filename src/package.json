@@ -2,7 +2,11 @@
   "name": "annonymous communication app",
   "version": "1.0.0",
   "description": "Annonymous communication app for all desktop platforms",
-  "main": "build.js",
+  "main": "dm.html",
+  "window":{
+      "frame":false,
+      "toolbar":false
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
