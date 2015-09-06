@@ -30,7 +30,6 @@
             app.trigger(
                 'encrypt',
                 document.getElementById('IMInput').value,
-                app.data.cipher,
                 sendEncrypted
             )
         }
@@ -69,7 +68,6 @@
             app.trigger(
                 'encrypt',
                 app.data.them+app.data.you,
-                app.data.cipher,
                 connectToEncrypted
             );
         }
@@ -78,11 +76,18 @@
             app.data.you     = document.getElementById('you').value,
             app.data.them    = document.getElementById('them').value,
             app.data.cipher  = document.getElementById('IMCipher').value;
+            app.data.key     = CryptoJS.PBKDF2(
+                app.data.cipher, 
+                CryptoJS.enc.Hex.parse(app.data.salt), 
+                {
+                    keySize: 128/32, 
+                    iterations: 10
+                }
+            );
             
             app.trigger(
                 'encrypt',
                 app.data.you+app.data.them,
-                app.data.cipher,
                 connectEncrypted
             );
         }
@@ -131,7 +136,6 @@
             app.trigger(
                 'decrypt',
                 data.data,
-                app.data.cipher,
                 showMessage
             );
         }

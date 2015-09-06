@@ -2,6 +2,9 @@
     function(){
         var moduleName='encrypt';
         
+        app.data.salt='3BB2EC019C627B945225DEBAD71A01B6785AE84C95A70EB132882FF8C0A59A55'
+        app.data.iv = "12345578001222567890123455789012";
+
         function render(el){
             el.addEventListener(
                 'click',
@@ -38,16 +41,20 @@
             cipher.setAttribute('type','password');
         }
         
-        function encrypt(data,cipher,callback){
+        function encrypt(data,callback){
             if(!callback)
                 return;
-                
+            
+            var encrypted=CryptoJS.AES.encrypt(
+                data, 
+                app.data.key, 
+                {
+                    iv: CryptoJS.enc.Hex.parse(app.data.iv)
+                }
+            ).ciphertext.toString(CryptoJS.enc.Base64);
             
             callback(
-                CryptoJS.AES.encrypt(
-                    data, 
-                    cipher
-                ).toString()
+                encrypted
             );
         }
         

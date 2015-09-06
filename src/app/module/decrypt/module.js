@@ -38,17 +38,19 @@
             cipher.setAttribute('type','password');
         }
         
-        function decrypt(data,cipher,callback){
+        function decrypt(data,callback){
             if(!callback)
                 return;
-                
             
-            callback(
-                CryptoJS.AES.decrypt(
-                    data, 
-                    cipher
-                ).toString(CryptoJS.enc.Utf8)
-            );
+            var decrypted=CryptoJS.AES.decrypt(
+                data, 
+                app.data.key, 
+                {
+                    iv: CryptoJS.enc.Hex.parse(app.data.iv)
+                }
+            ).toString(CryptoJS.enc.Utf8);
+            
+            callback(decrypted);
         }
         
         app.on(
