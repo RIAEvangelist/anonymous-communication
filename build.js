@@ -4,7 +4,8 @@ var nw = new NwBuilder(
         files: './src/**/**', // use the glob format
         platforms: ['osx', 'win','linux'],
         winIco: './src/icons/icon_256.ico',
-        macZip:true
+        macZip:true,
+        version:'0.12.3'
     }
 );
 
