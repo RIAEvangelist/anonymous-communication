@@ -1,7 +1,7 @@
 {
   "name": "anonymous-communication-nwjs",
-  "version": "0.0.1",
-  "description": "Anonymous Communication App ======================= ***Government level encryption/decryption (U.S. FIPS). The same encryption is used by NSA and other governments around the world to secure classified data.***",
+  "version": "1.0.0",
+  "description": "Anonymous Communication App. Secure, safe, anonymous",
   "main": "build.js",
   "dependencies": {
     "nw-builder": "^2.0.2"
